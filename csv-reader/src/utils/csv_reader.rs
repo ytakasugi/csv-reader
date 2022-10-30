@@ -34,7 +34,7 @@ pub struct FxData {
     pub trade_name: String,
     pub trade_type: String,
     pub trading_date: chrono::NaiveDate,
-    pub prior_day_settlement_price: i32,
+    pub prior_day_settlement_price: f32,
     pub open_price: f32,
     pub high_price: f32,
     pub low_price: f32,
@@ -43,6 +43,6 @@ pub struct FxData {
     pub on_the_day: f32,
     pub daily_comparsion: i32,
     pub swap_point: i32,
-    pub trading_volume: f32,
-    pub open_interest_volume: f32
+    pub trading_volume: i32,
+    pub open_interest_volume: i32
 }
