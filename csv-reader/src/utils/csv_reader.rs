@@ -41,8 +41,8 @@ pub struct FxData {
     pub close_price: f32,
     pub settlement_price: f32,
     pub on_the_day: f32,
-    pub daily_comparsion: i32,
-    pub swap_point: i32,
+    pub daily_comparsion: Option<i32>,
+    pub swap_point: Option<i32>,
     pub trading_volume: i32,
     pub open_interest_volume: i32
 }
