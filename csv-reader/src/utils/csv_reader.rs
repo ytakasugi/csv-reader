@@ -40,7 +40,7 @@ pub struct FxData {
     pub low_price: f32,
     pub close_price: f32,
     pub settlement_price_on_the_day: f32,
-    pub daily_comparsion: Option<i32>,
+    pub daily_comparsion: Option<f32>,
     pub swap_point: Option<i32>,
     pub trading_volume: String,
     pub open_interest_volume: String
