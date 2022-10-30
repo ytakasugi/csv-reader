@@ -1,4 +1,4 @@
-商品名,商品タイプ,取引日,前日清算価格,始値,高値,安値,終値,当日清算価格,前日比,スワップポイント,取引数量,建玉数量
+trade_name,trade_type,trading_date,prior_day_settlement_price,open_price,high_price,low_price,close_price,settlement_price_on_the_day,daily_comparsion,swap_point,trading_volume,open_interest_volume
 USD/JPY,"U.S. Dollar-Japanese Yen",2021/11/01,113.98,114.145,114.46,113.925,114,114,0.02,8,"24,775","394,819"
 USD/JPY,"U.S. Dollar-Japanese Yen",2021/11/02,114,114.025,114.15,113.455,113.945,113.945,-0.055,,"27,292","390,705"
 USD/JPY,"U.S. Dollar-Japanese Yen",2021/11/03,113.945,113.945,114.205,113.705,114.005,114.005,0.06,19,"15,533","391,102"

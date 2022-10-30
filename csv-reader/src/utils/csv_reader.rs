@@ -14,7 +14,7 @@ fn get_csv_path(path: &str) -> std::path::PathBuf {
 pub fn read_csv(path: &str) -> anyhow::Result<Vec<FxData>> {
     let csv_path = get_csv_path(path);
     let file = File::open(csv_path)?;
-    
+    //let mut rdr = csv::Reader::from_reader(file);
     let mut rdr = ReaderBuilder::new()
         .has_headers(true)
         .from_reader(file);
@@ -39,10 +39,9 @@ pub struct FxData {
     pub high_price: f32,
     pub low_price: f32,
     pub close_price: f32,
-    pub settlement_price: f32,
-    pub on_the_day: f32,
+    pub settlement_price_on_the_day: f32,
     pub daily_comparsion: Option<i32>,
     pub swap_point: Option<i32>,
-    pub trading_volume: i32,
-    pub open_interest_volume: i32
+    pub trading_volume: String,
+    pub open_interest_volume: String
 }
