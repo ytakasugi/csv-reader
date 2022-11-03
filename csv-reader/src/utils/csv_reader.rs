@@ -1,6 +1,7 @@
+use std::fs::File;
+
 use csv::ReaderBuilder;
 use serde::Deserialize;
-use std::fs::File;
 
 fn get_csv_path(path: &str) -> std::path::PathBuf {
     let project_path = env!("CARGO_MANIFEST_DIR");
